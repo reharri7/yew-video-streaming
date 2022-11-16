@@ -1,0 +1,27 @@
+[package]
+name = "yew-video-streaming"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = "0.19"
+wasm-bindgen = "0.2.80"
+wasm-bindgen-futures = "0.4.33"
+js-sys = "0.3.60"
+
+[dependencies.web-sys]
+version = "0.3.57"
+features = [
+    "console",
+    "EncodedVideoChunk",
+    "HtmlVideoElement",
+    "MediaDevices",
+    "MediaStream",
+    "MediaStreamConstraints",
+    "Navigator",
+    "VideoEncoder",
+    "VideoEncoderInit",
+    "VideoTrack",
+]
